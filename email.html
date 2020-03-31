@@ -57,10 +57,33 @@
         display:block;
     }    
 }   
+a.linky {
+    color: #323232;
+    font-weight: bold;
+    transition: 373ms;
+}
+a.linky2 {
+    color: #323232;
+    font-weight: bold;
+    transition: 373ms;
+    text-decoration: none;
+}
+a.linky2.small {
+    font-size: 18px!important;
+}
+a.linky:hover {
+    opacity: 0.5;
+}
+a.linky2:hover {
+    opacity: 0.5;
+}
 
     /* MOBILE STYLES */
     @media screen and (max-width: 1024px) {
-
+        .socy {
+            width: 37px;
+            height: 37px;
+        }
         /* ALLOWS FOR FLUID TABLES */
         table[class="wrapper"]{
           width:100% !important;
@@ -93,6 +116,10 @@
         table[class="responsive-table"]{
           width:100%!important;
         }
+
+        table.responsive-table {
+            background-color: #fff;
+        }        
 
         /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
         td[class="padding"]{
@@ -174,7 +201,7 @@
                                                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                           <tr>
                                                               <td>
-                                                                  <a href="https://www.dna.rs" target="_blank"><img src="http://www.37.rs/dna/dna-img-head.png" width="1042" height="669" border="0" alt="DNA" class="img-max"></a>
+                                                                  <img src="http://www.37.rs/dna/dna-img-head.png" width="1042" height="669" border="0" alt="DNA" class="img-max">
                                                               </td>
                                                             </tr>
                                                         </table>
@@ -189,7 +216,10 @@
                                     <!-- COPY -->
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td align="left" style="padding: 17px 37px 37px 37px;  background-color: #fff; font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">Koliko god da je vaš tim u redovnim okolnostima iskusan ili uigran, u vreme neizvesnosti, svakom se može dogoditi nesigurnost, demotivisanost, nedostatak timskog duha, otuđenost...</td>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p>Koliko god da je vaš tim u redovnim okolnostima iskusan ili uigran, u vreme neizvesnosti, svakom se može dogoditi nesigurnost, demotivisanost, nedostatak timskog duha, otuđenost...
+                                                    </p>
+                                                </td>
                                         </tr>
                                     </table>
                                 </td>
@@ -220,7 +250,7 @@
                                                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                           <tr>
                                                               <td>
-                                                                  <a href="https://www.dna.rs" target="_blank"><img src="http://www.37.rs/dna/dna-img-head-mobile.png" width="667" height="896" border="0" alt="DNA" class="img-max"></a>
+                                                                  <img src="http://www.37.rs/dna/dna-img-head-mobile.png" width="667" height="896" border="0" alt="DNA" class="img-max">
                                                               </td>
                                                             </tr>
                                                         </table>
@@ -235,7 +265,10 @@
                                     <!-- COPY -->
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td align="left" style="padding: 17px 37px 37px 37px;  background-color: #fff; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">Koliko god da je vaš tim u redovnim okolnostima iskusan ili uigran, u vreme neizvesnosti, svakom se može dogoditi nesigurnost, demotivisanost, nedostatak timskog duha, otuđenost...</td>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p>Koliko god da je vaš tim u redovnim okolnostima iskusan ili uigran, u vreme neizvesnosti, svakom se može dogoditi nesigurnost, demotivisanost, nedostatak timskog duha, otuđenost...
+                                                    </p>
+                                                </td>
                                         </tr>
                                     </table>
                                 </td>
@@ -267,7 +300,7 @@
                                                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                           <tr>
                                                               <td>
-                                                                  <a href="https://www.dna.rs" target="_blank"><img src="http://www.37.rs/dna/dna-img-interna.png" width="1042" height="669" border="0" alt="DNA" class="img-max"></a>
+                                                                  <img src="http://www.37.rs/dna/dna-img-interna.png" width="1042" height="669" border="0" alt="DNA" class="img-max">
                                                               </td>
                                                             </tr>
                                                         </table>
@@ -282,7 +315,7 @@
                                     <!-- COPY -->
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td align="left" style="padding: 17px 37px 37px 37px;  background-color: #fff; font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
                                                 <p>Sada je od ključne važnosti:</p>
                                                 <ul>
                                                     <li>da firma uliva sigurnost – pokaže da je tu za svoje ljude, da radi i radiće,</li>
@@ -291,6 +324,9 @@
                                                     <li>da budete transparentni – što je vakcina za sumnju i anksioznost,</li>
                                                     <li>da u situaciji za koju niko nije bio spreman, pokažete pravi karakter.</li>
                                                 </ul>
+                                                <p>
+                                                    Još jedno je mnogima sada postalo jasno: <a class="linky" href="https://dna.rs/rad-ok-kuce-u-doba-korone/" target="_blank">„rad na daljinu“</a> je budućnost, a njega će morati da prate i interne komunikacije na daljinu.                                                    
+                                                </p>
                                             </td>
                                         </tr>
                                     </table>
@@ -322,7 +358,7 @@
                                                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                           <tr>
                                                               <td>
-                                                                  <a href="https://www.dna.rs" target="_blank"><img src="http://www.37.rs/dna/dna-img-interna-mobile.png" width="667" height="896" border="0" alt="DNA" class="img-max"></a>
+                                                                  <img src="http://www.37.rs/dna/dna-img-interna-mobile.png" width="667" height="896" border="0" alt="DNA" class="img-max">
                                                               </td>
                                                             </tr>
                                                         </table>
@@ -337,7 +373,19 @@
                                     <!-- COPY -->
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td align="left" style="padding: 17px 37px 37px 37px;  background-color: #fff; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">Koliko god da je vaš tim u redovnim okolnostima iskusan ili uigran, u vreme neizvesnosti, svakom se može dogoditi nesigurnost, demotivisanost, nedostatak timskog duha, otuđenost...</td>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p>Sada je od ključne važnosti:</p>
+                                                <ul>
+                                                    <li>da firma uliva sigurnost – pokaže da je tu za svoje ljude, da radi i radiće,</li>
+                                                    <li>da razvijate i jačate kolektivni duh i osećaj zajedništva,</li>
+                                                    <li>da emitujete savršenu ravnotežu brige i optimizma,</li>
+                                                    <li>da budete transparentni – što je vakcina za sumnju i anksioznost,</li>
+                                                    <li>da u situaciji za koju niko nije bio spreman, pokažete pravi karakter.</li>
+                                                </ul>
+                                                <p>
+                                                    Još jedno je mnogima sada postalo jasno: <a class="linky" href="https://dna.rs/rad-ok-kuce-u-doba-korone/" target="_blank">„rad na daljinu“</a> je budućnost, a njega će morati da prate i interne komunikacije na daljinu.                                                    
+                                                </p>
+                                            </td>
                                         </tr>
                                     </table>
                                 </td>
@@ -351,7 +399,235 @@
 </table>
 
 
+<!-- WECAN SECTION -->
+<table class="deskhead" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#f3a5ab" align="center" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="1042" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- HERO IMAGE -->
+                                    <table style="background-color: #fff;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                             <tr>
+                                                  <td class="padding-copy">
+                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                              <td>
+                                                                  <img src="http://www.37.rs/dna/dna-img-wecan.png" width="1042" border="0" alt="DNA" class="img-max">
+                                                              </td>
+                                                            </tr>
+                                                        </table>
+                                                  </td>
+                                              </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p>Bilo da vam je potrebna podrška u <strong>(re)strukturiranju</strong> komunikacije, odabiru i primeni <strong>toolova</strong>, razvoju pravog <strong>pristupa ili tona</strong>, dodatnih kanala i <strong>motivišućih radionica „na daljinu“</strong>, zajedno ćemo pronaći odgovore na sve izazove.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 
+<!-- WECAN SECTION  MOBILE -->
+<table class="mobhead" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#f3a5ab" align="center" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="1042" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- HERO IMAGE -->
+                                    <table style="background-color: #fff;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                             <tr>
+                                                  <td class="padding-copy">
+                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                              <td>
+                                                                  <img src="http://www.37.rs/dna/dna-img-wecan-mobile.png" width="667" border="0" alt="DNA" class="img-max">
+                                                              </td>
+                                                            </tr>
+                                                        </table>
+                                                  </td>
+                                              </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p>Bilo da vam je potrebna podrška u <strong>(re)strukturiranju</strong> komunikacije, odabiru i primeni <strong>toolova</strong>, razvoju pravog <strong>pristupa ili tona</strong>, dodatnih kanala i <strong>motivišućih radionica „na daljinu“</strong>, zajedno ćemo pronaći odgovore na sve izazove.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- CALLUS SECTION -->
+<table class="deskhead" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#f3a5ab" align="center" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="1042" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- HERO IMAGE -->
+                                    <table style="background-color: #fff;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                             <tr>
+                                                  <td class="padding-copy">
+                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                              <td>
+                                                                  <img src="http://www.37.rs/dna/dna-img-callus.png" width="1042" border="0" alt="DNA" class="img-max">
+                                                              </td>
+                                                            </tr>
+                                                        </table>
+                                                  </td>
+                                              </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p><a target="_blank" class="linky2 small" href="https://dna.rs/">Vaš DNA Communications</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding: 17px 17px 37px 17px; background-color: #fff;" class="padding-copy">
+                                                <table style="width: 65%">
+                                                    <tr>
+                                                        <td style="text-align: center; background: width: 19%"><a href="mailto:dna@dna.rs" class="linky"><img src="http://www.37.rs/dna/dna-icon-email.png"></a></td>
+                                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.facebook.com/DNAcommunications/" class="linky"><img src="http://www.37.rs/dna/dna-icon-fb.png"></a></td>
+                                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.instagram.com/dna_rs/?hl=en" class="linky"><img src="http://www.37.rs/dna/dna-icon-ig.png"></a></td>
+                                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.linkedin.com/company/dna-communications---serbia/" class="linky"><img src="http://www.37.rs/dna/dna-icon-li.png"></a></td>
+                                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.youtube.com/user/dnacommunicationsbgd" class="linky"><img src="http://www.37.rs/dna/dna-icon-yt.png"></a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>     
+                                        <tr>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p><a style="font-weight: normal!important;" target="_blank" class="linky2" href="https://dna.rs/">© DNA Communications 2020</a></p>
+                                            </td>
+                                        </tr>                                                                             
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- CALLUS SECTION  MOBILE -->
+<table class="mobhead" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#f3a5ab" align="center" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="1042" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- HERO IMAGE -->
+                                    <table style="background-color: #fff;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                             <tr>
+                                                  <td class="padding-copy">
+                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                              <td>
+                                                                  <img src="http://www.37.rs/dna/dna-img-callus-mobile.png" width="667" border="0" alt="DNA" class="img-max">
+                                                              </td>
+                                                            </tr>
+                                                        </table>
+                                                  </td>
+                                              </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p><a target="_blank" class="linky2" href="https://dna.rs/">Vaš DNA Communications</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding: 17px 17px 37px 17px; background-color: #fff;" class="padding-copy">
+                                                <table style="width: 98%">
+                                                    <tr>
+                                                        <td style="text-align: center; background: width: 19%"><a href="mailto:dna@dna.rs" class="linky"><img class="socy" src="http://www.37.rs/dna/dna-icon-email.png"></a></td>
+                                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.facebook.com/DNAcommunications/" class="linky"><img class="socy" src="http://www.37.rs/dna/dna-icon-fb.png"></a></td>
+                                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.instagram.com/dna_rs/?hl=en" class="linky"><img class="socy" src="http://www.37.rs/dna/dna-icon-ig.png"></a></td>
+                                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.linkedin.com/company/dna-communications---serbia/" class="linky"><img class="socy" src="http://www.37.rs/dna/dna-icon-li.png"></a></td>
+                                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.youtube.com/user/dnacommunicationsbgd" class="linky"><img class="socy" src="http://www.37.rs/dna/dna-icon-yt.png"></a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>     
+                                        <tr>
+                                            <td align="left" style="padding: 0 37px 0 37px;  background-color: #fff; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #323232;" class="padding-copy">
+                                                <p><a style="font-weight: normal!important;" target="_blank" class="linky2" href="https://dna.rs/">© DNA Communications 2020</a></p>
+                                            </td>
+                                        </tr>                                                                             
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 
 <!-- FOOTER -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
