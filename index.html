@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-size: 14px;">
+<html>
 <head>
 <title>DNA Communications</title>
 <meta charset="utf-8">
@@ -34,6 +34,11 @@ table,tr,td {
     max-width: 100%; 
     max-height:100%;
 }
+.dna-img-mobile {
+    display: block; 
+    max-width: 100%; 
+    max-height:100%;
+}
 .wrap {
     background-color: white;
     width: 500px;
@@ -41,26 +46,38 @@ table,tr,td {
 .text-cell {
     width: 500px;
     color: #323232;
-    font-size: 1rem;
+    font-size: 14px;
 }
 .linky:hover {
     opacity: 0.8;
 }
+.mobileHead {
+    display: none;
+}
+.deskHead {
+    display: table-row;
+    }
 @media screen and (max-width: 540px) {
     .text-cell {
     width: 320px;
-    font-size: 0.875rem;
+    font-size: 14px;
     }
     .wrap {
         width: 320px;
     }
+    .mobileHead {
+    display: table-row;
+    } 
+    .deskHead {
+    display: none;
+    }        
 }
 </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f3a5ab;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+<body bgcolor="#f3a5ab" style="margin: 0; padding: 0; background-color: #f3a5ab;">
+    <table bgcolor="#f3a5ab" border="0" cellpadding="0" cellspacing="0" width="100%">
         <tbody>
-            <tr>
+            <tr class="deskHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
@@ -69,12 +86,21 @@ table,tr,td {
                     </table>
                 </td>
             </tr>
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff"><img class="dna-img-mobile" src="http://www.37.rs/dna/dna-img-head-mobile.png" border="0" alt="DNA"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>            
             <tr>
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
                             <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 2rem; font-family: Arial, Helvetica, sans-serif;">
+                                <p style="margin: 16px; font-family: Arial, Helvetica, sans-serif;">
                                     Koliko god da je vaš tim u redovnim okolnostima iskusan ili uigran, u vreme neizvesnosti, svakom se može dogoditi nesigurnost, demotivisanost, nedostatak timskog duha, otuđenost...                                          
                                 </p>
                             </td>
@@ -82,13 +108,26 @@ table,tr,td {
                     </table>
                 </td>
             </tr>
-            <tr>
+            <tr class="deskHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
                             <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 0 2rem;">
+                                <p style="margin: 0 16px;">
                                     <img class="dna-img" src="http://www.37.rs/dna/dna-img-interna.png" border="0" alt="DNA">
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>            
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap text-cell" bgcolor="#ffffff">
+                                <p style="margin: 0 16px;">
+                                    <img class="dna-img" src="http://www.37.rs/dna/dna-img-interna-mobile.png" border="0" alt="DNA">
                                 </p>
                             </td>
                         </tr>
@@ -100,15 +139,15 @@ table,tr,td {
                     <table class="wrap" border="0">
                         <tr class="wrap">
                             <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 1rem 2rem; font-family: Arial, Helvetica, sans-serif;">Sada je od ključne važnosti:</p>
-                                <ul style="margin: 0 1rem; font-family: Arial, Helvetica, sans-serif;">
+                                <p style="margin: 16px 16px; font-family: Arial, Helvetica, sans-serif;">Sada je od ključne važnosti:</p>
+                                <ul style="margin: 0 16px; font-family: Arial, Helvetica, sans-serif;">
                                     <li style="margin-bottom: 4px;">da firma uliva sigurnost – pokaže da je tu za svoje ljude, da radi i radiće,</li>
                                     <li style="margin-bottom: 4px;">da razvijate i jačate kolektivni duh i osećaj zajedništva,</li>
                                     <li style="margin-bottom: 4px;">da emitujete savršenu ravnotežu brige i optimizma,</li>
                                     <li style="margin-bottom: 4px;">da budete transparentni – što je vakcina za sumnju i anksioznost,</li>
                                     <li style="margin-bottom: 4px;">da u situaciji za koju niko nije bio spreman, pokažete pravi karakter.</li>
                                 </ul>
-                                <p style="margin: 2rem; font-family: Arial, Helvetica, sans-serif;">
+                                <p style="margin: 16px; font-family: Arial, Helvetica, sans-serif;">
                                     Još jedno je mnogima sada postalo jasno: <a class="linky" style="color: #323232; font-weight:bold;" href="https://dna.rs/rad-ok-kuce-u-doba-korone/" target="_blank">„rad na daljinu“</a> je budućnost, a njega će morati da prate i interne komunikacije na daljinu.                                                    
                                 </p>
                             </td>
@@ -134,7 +173,7 @@ table,tr,td {
                     <table class="wrap" border="0">
                         <tr class="wrap">
                             <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 2rem; font-family: Arial, Helvetica, sans-serif;">
+                                <p style="margin: 16px; font-family: Arial, Helvetica, sans-serif;">
                                     Bilo da vam je potrebna podrška u <strong>(re)strukturiranju komunikacije</strong>, odabiru i primeni toolova, razvoju pravog <strong>pristupa ili tona</strong>, dodatnih kanala i <strong>motivišućih radionica „na daljinu“</strong>, zajedno ćemo pronaći odgovore na sve izazove.
                                 </p>
                             </td>
@@ -160,7 +199,7 @@ table,tr,td {
                     <table class="wrap" border="0">
                         <tr class="wrap">
                             <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 2rem; font-family: Arial, Helvetica, sans-serif;">
+                                <p style="margin: 16px; font-family: Arial, Helvetica, sans-serif;">
                                     <a target="_blank" class="linky" style="text-decoration: none; color: #323232; font-weight:bold;" href="https://dna.rs/">Vaš DNA Communications</a>
                                 </p>
                             </td>
@@ -175,11 +214,11 @@ table,tr,td {
                             <td class="wrap text-cell" bgcolor="#ffffff" align="center">
                                 <table style="width: 75%">
                                     <tr>
-                                        <td style="text-align: center; background: width: 19%"><a href="mailto:dna@dna.rs" class="linky"><img class="socy" style="width:31px;" src="http://www.37.rs/dna/dna-icon-email.png"></a></td>
-                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.facebook.com/DNAcommunications/" class="linky"><img class="socy" style="width:31px;" src="http://www.37.rs/dna/dna-icon-fb.png"></a></td>
-                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.instagram.com/dna_rs/?hl=en" class="linky"><img class="socy" style="width:31px;" src="http://www.37.rs/dna/dna-icon-ig.png"></a></td>
-                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.linkedin.com/company/dna-communications---serbia/" class="linky"><img class="socy" style="width:31px;" src="http://www.37.rs/dna/dna-icon-li.png"></a></td>
-                                        <td style="text-align: center; background: width: 19%"><a target="_blank" href="https://www.youtube.com/user/dnacommunicationsbgd" class="linky"><img class="socy" style="width:31px;" src="http://www.37.rs/dna/dna-icon-yt.png"></a></td>
+                                        <td style="text-align: center; width: 19%"><a href="mailto:dna@dna.rs" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/dna/dna-icon-email.png"></a></td>
+                                        <td style="text-align: center; width: 19%"><a target="_blank" href="https://www.facebook.com/DNAcommunications/" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/dna/dna-icon-fb.png"></a></td>
+                                        <td style="text-align: center; width: 19%"><a target="_blank" href="https://www.instagram.com/dna_rs/?hl=en" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/dna/dna-icon-ig.png"></a></td>
+                                        <td style="text-align: center; width: 19%"><a target="_blank" href="https://www.linkedin.com/company/dna-communications---serbia/" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/dna/dna-icon-li.png"></a></td>
+                                        <td style="text-align: center; width: 19%"><a target="_blank" href="https://www.youtube.com/user/dnacommunicationsbgd" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/dna/dna-icon-yt.png"></a></td>
                                     </tr>
                                 </table>
                             </td>
@@ -192,7 +231,7 @@ table,tr,td {
                     <table class="wrap" border="0">
                         <tr class="wrap">
                             <td class="wrap text-cell" bgcolor="#ffffff" align="center">
-                                <p style="margin: 2.5rem 2rem 2rem 2rem; font-family: Arial, Helvetica, sans-serif;">
+                                <p style="margin: 2.5rem 16px 16px 16px; font-family: Arial, Helvetica, sans-serif;">
                                     <a style="text-decoration: none; color: #323232; font-weight: normal!important; font-size: 0.875rem;" target="_blank" class="linky2" href="https://dna.rs/">© DNA Communications 2020</a>
                                 </p>
                             </td>
