@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>VIP Communications</title>
+<title>VIP</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <style type="text/css">
 body {
-    background-color: #f3a5ab;
+    background-color: #e5e5e5;
 }
 #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
-    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
-    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
-    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
-    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
-    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
 
-    /* RESET STYLES */
-    body{margin:0; padding:0;}
-    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
-    table{border-collapse:collapse !important;}
-    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+/* RESET STYLES */
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table{border-collapse:collapse !important;}
+body{height:100% !important; margin:0; padding:0; width:100% !important;}
 table,tr,td {
     margin:0;
     padding:0;
@@ -28,6 +28,10 @@ table,tr,td {
     border-collapse:collapse;
     border-spacing:0;
     background-image:none;
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .VIP-img {
     display: block; 
@@ -42,11 +46,15 @@ table,tr,td {
 .wrap {
     background-color: white;
     width: 500px;
+    color: #000000;
+    font-size: 14px;  
+    padding: 0 20px;  
 }
-.text-cell {
-    width: 500px;
-    color: #323232;
-    font-size: 14px;
+.first-row {
+    padding-top: 30px;
+}
+.last-row {
+    padding-bottom: 30px;
 }
 .linky:hover {
     opacity: 0.8;
@@ -58,12 +66,9 @@ table,tr,td {
     display: table-row;
     }
 @media screen and (max-width: 540px) {
-    .text-cell {
-    width: 320px;
-    font-size: 14px;
-    }
     .wrap {
         width: 320px;
+        font-size: 14px;
     }
     .mobileHead {
     display: table-row;
@@ -74,35 +79,254 @@ table,tr,td {
 }
 </style>
 </head>
-<body bgcolor="#f3a5ab" style="margin: 0; padding: 0; background-color: #f3a5ab;">
-    <table bgcolor="#f3a5ab" border="0" cellpadding="0" cellspacing="0" width="100%">
+<body bgcolor="#e5e5e5" style="margin: 0; padding: 0; background-color: #e5e5e5;">
+    <table bgcolor="#e5e5e5" border="0" cellpadding="0" cellspacing="0" width="100%">
         <tbody>
             <tr class="deskHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap" bgcolor="#ffffff"><img class="VIP-img" src="https://www.vipmobile.rs/img/webshop/mail-header.png" border="0" alt="VIP"></td>
+                            <td class="" bgcolor="#ffffff"><img class="VIP-img" src="https://cdn.vipmobile.rs/vipsite-test/img/a1/webshop/SuccessOrderNL.jpg" border="0" alt="VIP"></td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr class="mobileHead">
+            
+            <!--cart title-->
+            <tr class="deskHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap" bgcolor="#ffffff"><img class="VIP-img-mobile" src="https://www.vipmobile.rs/img/webshop/mail-header.png" border="0" alt="VIP"></td>
+                            <td class="wrap first-row" bgcolor="#ffffff" >
+                                <p style="font-size: 42px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Tvoj paket
+                                </p>
+                            </td>
                         </tr>
                     </table>
                 </td>
-            </tr>            
-            <tr>
+            </tr>
+            <!--order number-->
+            <tr class="deskHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 16px; font-family: Arial, Helvetica, sans-serif;">
-                                    Koliko god da je vaš tim u redovnim okolnostima iskusan ili uigran, u vreme neizvesnosti, svakom se može dogoditi nesigurnost, demotivisanost, nedostatak timskog duha, otuđenost...                                          
+                            <td class="wrap" bgcolor="#ffffff" >
+                                <p style="font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                                    Broj porudžbine C111Sd37OINA22
                                 </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--cartDisplayBlock-->
+            <!--blockTitle-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff" >
+                                <p style="font-size: 24px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Apple iPhone 11 Pro Max
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--subBlocks start-->
+            <!--cartDisplaySubBlock-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 34%; text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Na 24 mesečne rate</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">140.000 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">1.000 RSD</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+             <!--blockTitle-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 24px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    NEO 5
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--subBlocks start-->
+            <!--cartDisplaySubBlock-->            
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 34%; text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">5GB neta, NEOgraničeni minuti i poruke</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">1.899 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--cartDisplaySubBlock-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 34%; text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">5GB neta, NEOgraničeni minuti i poruke</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">1.899 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--cart sum-->   
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 34%; text-align: left;  display:table-cell; padding: 8px 0; font-size: 24px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Ukupno</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><div style="font-weight: bold;">2487 RSD</div><div style="color: #808080;">Mesečno</div></td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><div style="font-weight: bold;">1899 RSD</div><div style="color: #808080;">Na 24 rate</div></td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><div style="font-weight: bold;">2487 RSD</div><div style="color: #808080;">Odmah</div></td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--delivery title-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff" >
+                                <p style="font-size: 42px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Način dostave
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--delivery block-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 24px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Dostava na adresu
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--delivery subblock-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Ulica i broj</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Bulevar Nikole Tesle 1</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--delivery subblock-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Grad/opština</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Novi Beograd</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>   
+            <!--details title-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff" >
+                                <p style="font-size: 42px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Detalji
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--details block-->
+            <!--payment type-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 24px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Plaćanje prilikom preuzimanja
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--user data-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 24px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Podaci o korisniku
+                                </p>  
                             </td>
                         </tr>
                     </table>
@@ -112,133 +336,416 @@ table,tr,td {
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 0 16px;">
-                                    <img class="VIP-img" src="http://www.37.rs/VIP/VIP-img-interna.png" border="0" alt="VIP">
-                                </p>
+                            <td class="wrap" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Marija Ćosić</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"></td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Email</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">slavkoperisic@gmail.com</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--vendor data-->
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 24px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Podaci o prodavcu
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Vip mobile d.o.o.</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"></td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="deskHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Adresa</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Bulevar Milutina Milankovića 1ž, 11070 Novi Beograd, Srbija</td>
+                                    </tr>
+                                </table>    
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>            
+
+
+
+
+
+            <!-- MOBILE VIEW -------------------------------------------------------------------------->
             <tr class="mobileHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 0 16px;">
-                                    <img class="VIP-img" src="http://www.37.rs/VIP/VIP-img-interna-mobile.png" border="0" alt="VIP">
+                            <td class="" bgcolor="#ffffff"><img class="VIP-img" src="https://cdn.vipmobile.rs/vipsite-test/img/a1/webshop/SuccessOrderNL.jpg" border="0" alt="VIP"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!--cart title-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap first-row" bgcolor="#ffffff" >
+                                <p style="font-size: 32px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Tvoj paket
                                 </p>
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr>
+            <!--order number-->
+            <tr class="mobileHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 16px 16px; font-family: Arial, Helvetica, sans-serif;">Sada je od ključne važnosti:</p>
-                                <ul style="margin: 0 16px; font-family: Arial, Helvetica, sans-serif;">
-                                    <li style="margin-bottom: 4px;">da firma uliva sigurnost – pokaže da je tu za svoje ljude, da radi i radiće,</li>
-                                    <li style="margin-bottom: 4px;">da razvijate i jačate kolektivni duh i osećaj zajedništva,</li>
-                                    <li style="margin-bottom: 4px;">da emitujete savršenu ravnotežu brige i optimizma,</li>
-                                    <li style="margin-bottom: 4px;">da budete transparentni – što je vakcina za sumnju i anksioznost,</li>
-                                    <li style="margin-bottom: 4px;">da u situaciji za koju niko nije bio spreman, pokažete pravi karakter.</li>
-                                </ul>
-                                <p style="margin: 16px; font-family: Arial, Helvetica, sans-serif;">
-                                    Još jedno je mnogima sada postalo jasno: <a class="linky" style="color: #323232; font-weight:bold;" href="https://VIP.rs/rad-ok-kuce-u-doba-korone/" target="_blank">„rad na daljinu“</a> je budućnost, a njega će morati da prate i interne komunikacije na daljinu.                                                    
+                            <td class="wrap" bgcolor="#ffffff" >
+                                <p style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                    Broj porudžbine C111Sd37OINA22
                                 </p>
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr>
+            <!--cartDisplayBlock-->
+            <!--blockTitle-->
+            <tr class="mobileHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 0">
-                                    <img class="VIP-img" src="http://www.37.rs/VIP/VIP-img-wecan.png" border="0" alt="VIP">
+                            <td class="wrap" bgcolor="#ffffff" >
+                                <p style="font-size: 18px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Apple iPhone 11 Pro Max
                                 </p>
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr>
+            <!--subBlocks start-->
+            <!--cartDisplaySubBlock-->
+            <tr class="mobileHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 16px; font-family: Arial, Helvetica, sans-serif;">
-                                    Bilo da vam je potrebna podrška u <strong>(re)strukturiranju komunikacije</strong>, odabiru i primeni toolova, razvoju pravog <strong>pristupa ili tona</strong>, dodatnih kanala i <strong>motivišućih radionica „na daljinu“</strong>, zajedno ćemo pronaći odgovore na sve izazove.
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr> 
-            <tr>
-                <td align="center">
-                    <table class="wrap" border="0">
-                        <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 0">
-                                    <img class="VIP-img" src="http://www.37.rs/VIP/VIP-img-callus.png" border="0" alt="VIP">
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>  
-            <tr>
-                <td align="center">
-                    <table class="wrap" border="0">
-                        <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff">
-                                <p style="margin: 16px; font-family: Arial, Helvetica, sans-serif;">
-                                    <a target="_blank" class="linky" style="text-decoration: none; color: #323232; font-weight:bold;" href="https://VIP.rs/">Vaš VIP Communications</a>
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <table class="wrap" border="0">
-                        <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff" align="center">
-                                <table style="width: 75%">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
                                     <tr>
-                                        <td style="text-align: center; width: 19%"><a href="mailto:VIP@VIP.rs" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/VIP/VIP-icon-email.png"></a></td>
-                                        <td style="text-align: center; width: 19%"><a target="_blank" href="https://www.facebook.com/VIPcommunications/" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/VIP/VIP-icon-fb.png"></a></td>
-                                        <td style="text-align: center; width: 19%"><a target="_blank" href="https://www.instagram.com/VIP_rs/?hl=en" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/VIP/VIP-icon-ig.png"></a></td>
-                                        <td style="text-align: center; width: 19%"><a target="_blank" href="https://www.linkedin.com/company/VIP-communications---serbia/" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/VIP/VIP-icon-li.png"></a></td>
-                                        <td style="text-align: center; width: 19%"><a target="_blank" href="https://www.youtube.com/user/VIPcommunicationsbgd" class="linky"><img class="socy" style="width:31px; height: 31px;" src="http://www.37.rs/VIP/VIP-icon-yt.png"></a></td>
+                                        <td style="width: 34%; text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Na 24 mesečne rate</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">140.000 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">1.000 RSD</td>
                                     </tr>
-                                </table>
+                                </table>    
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr>
+             <!--blockTitle-->
+            <tr class="mobileHead">
                 <td align="center">
                     <table class="wrap" border="0">
                         <tr class="wrap">
-                            <td class="wrap text-cell" bgcolor="#ffffff" align="center">
-                                <p style="margin: 2.5rem 16px 16px 16px; font-family: Arial, Helvetica, sans-serif;">
-                                    <a style="text-decoration: none; color: #323232; font-weight: normal!important; font-size: 0.875rem;" target="_blank" class="linky2" href="https://VIP.rs/">© VIP Communications 2020</a>
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 18px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    NEO 5
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--subBlocks start-->
+            <!--cartDisplaySubBlock-->            
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 34%; text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">5GB neta, NEOgraničeni minuti i poruke</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">1.899 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--cartDisplaySubBlock-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 34%; text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">5GB neta, NEOgraničeni minuti i poruke</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">1.899 RSD</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">0 RSD</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--cart sum-->   
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 34%; text-align: left;  display:table-cell; padding: 8px 0; font-size: 18px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Ukupno</td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><div style="font-weight: bold;">2487 RSD</div><div style="color: #808080;">Mesečno</div></td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><div style="font-weight: bold;">1899 RSD</div><div style="color: #808080;">Na 24 rate</div></td>
+                                        <td style="width: 22%; text-align: right; display:table-cell; padding: 8px 0; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><div style="font-weight: bold;">2487 RSD</div><div style="color: #808080;">Odmah</div></td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--delivery title-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff" >
+                                <p style="font-size: 32px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Način dostave
                                 </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--delivery block-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 18px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Dostava na adresu
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--delivery subblock-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Ulica i broj</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Bulevar Nikole Tesle 1</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--delivery subblock-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Grad/opština</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Novi Beograd</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>   
+            <!--details title-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff" >
+                                <p style="font-size: 32px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Detalji
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--details block-->
+            <!--payment type-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 18px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Plaćanje prilikom preuzimanja
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--user data-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 18px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Podaci o korisniku
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Marija Ćosić</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"></td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Email</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">slavkoperisic@gmail.com</td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--vendor data-->
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <p style="font-size: 18px; font-weight:bold; font-family: Arial, Helvetica, sans-serif;">
+                                    Podaci o prodavcu
+                                </p>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Vip mobile d.o.o.</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"></td>
+                                    </tr>
+                                </table>    
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="mobileHead">
+                <td align="center">
+                    <table class="wrap" border="0">
+                        <tr class="wrap">
+                            <td class="wrap last-row" bgcolor="#ffffff">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: left;  display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Adresa</td>
+                                        <td style="text-align: right; display:table-cell; padding: 8px 0; vertical-align: top; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Bulevar Milutina Milankovića 1ž, 11070 Novi Beograd, Srbija</td>
+                                    </tr>
+                                </table>    
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>            
+
+
         </tbody>   
     </table>
 </body>
